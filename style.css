@@ -1,0 +1,45 @@
+@font-face{
+  font-family:orbitron;
+  src:url('./public/fonts/Orbitron-VariableFont_wght.ttf');
+}
+
+@font-face{
+  font-family:oxanium;
+  src:url('./public/fonts/Oxanium-VariableFont_wght.ttf');
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: orbitron;
+}
+
+p{
+  font-family: oxanium;
+}
+
+#root {
+  width: 100%;
+}
+
+/*TODO: Make default resizing configurations of fonts here */
+
+.navbar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 58%;
+}
+
+.empty-space{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 6.5%;
+  background-color: red;
+}

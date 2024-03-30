@@ -42,9 +42,78 @@ button{
   font-weight: bold;
 }
 
+.icon{
+  width: 10%;
+  height: 100%;
+  scale: 1/1;
+}
+
 .neon-border{
   border: 2px solid var(--neonBlue);
   margin:8px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neon-border * {
+  margin:10px 5px;
+}
+
+/*? Media screen config */
+
+
+@media screen and (max-width: 576px) {
+  /* XS */
+  #logo {
+    scale: 0.15;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* SM */
+  #logo {
+    scale: 0.15;
+  }
+}
+
+@media screen and (max-width: 1382px) {
+  /* MD */
+  /* Add your CSS code for medium screens here */
+  #desktop{
+    display: none;
+  }
+
+  .grid{
+    flex-direction: column;
+  }
+
+  .grid div{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1382px) {
+  /* MD */
+
+  #logo {
+    scale: 0.35;
+  }
+}
+
+@media screen and (min-width: 1382px) {
+  /* LG */
+  #portable{
+    display: none;
+  }
+
+  .grid div {
+    width: 50%;
+  }
+
+  #logo {
+    scale: 0.45;
+  }
 }
 
 /*TODO: Make default resizing configurations of fonts here */
@@ -87,15 +156,46 @@ button{
 }
 
 /*? Hero Config */
-#banner{
+.banner{
   width: 100%;
   height: 950px;
   object-fit: cover;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+}
+
+#desktop{
+  background-image: url('./img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.char{
+  position:relative;
+  top: 0;
+  height: 100%;
+}
+
+
+#shockitty{
+  position:absolute;
+  left:0%;
+}
+
+#smirkitsune{
+  position:absolute;
+  right:0%;
+}
+
+#freezetess{
+  z-index: 1;
 }
 
 #gradient{
-  z-index: 0;
+  z-index: 2;
   position: absolute;
   top: 0;
   width: 100%;
@@ -113,8 +213,7 @@ button{
 #logo{
   position: relative;
   z-index: 1;
-  scale: 1.25;
-  padding-top: 17rem;
+  padding-top: 60%;
 }
 
 .heroTop {
@@ -166,20 +265,37 @@ button{
   margin: 6px;
 }
 
+
 .window-button{
+  display: flex;
+  justify-content: center;
   aspect-ratio: 1/1;
   width: 25px;
   border : 1px solid var(--neonBlue);
 }
 
+.window-button img{
+  width: 100%;
+  scale: 1.3;
+  aspect-ratio: 1/1;
+}
+
 /*? Grid content config */
 /*TODO: Make the grid responsive */
 .content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   padding: 1rem;
   align-items: center;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div{
+  margin: 0 1.8rem;
 }
 
 .content p {
@@ -208,11 +324,22 @@ button{
   align-items: center;
 }
 
+#kickstarter img, #discord img{
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+}
+
+#kickstarter p, #discord p{
+  display: none;
+}
+
 #kickstarter, #discord{
   margin: 0 1rem;
   min-height: 450px;
   width: 360px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -223,6 +350,7 @@ footer{
   align-items: center;
   padding: 10px 4.2rem;
   padding-bottom: 2rem;
+  font-size: 9pt;
 }
 
 footer img{
@@ -233,4 +361,11 @@ footer img{
 footer p{
   width: 40%;
   text-align: right;
+}
+
+#kickstarter span{
+  color: white;
+  background-image: url(./public/icons/linux.svg);
+  aspect-ratio: 1/1;
+  height: 100px;
 }

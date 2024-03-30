@@ -1,116 +1,358 @@
+<!--
+  @Author: kale
+  @Description Components:
+  1. Navigation bar (class: "navbar")
+  2. Top Hero section (class: "heroTop")
+  3. Padded container (class: "container")
+  4. Download button lineups (id: "download")
+  5. Black terminal screen (id: "about", class: "card")
+  6. Black terminal screen header (class: "card-header")
+  7. Black terminal screen body (class: "card-body")
+  8. Grid layout (class: "grid")
+  9. Feature container (id: "feature")
+  10. Kickstarter card (id: "kickstarter")
+  11. Discord card (id: "discord")
+-->
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Bedabots</title>
   </head>
   <header>
-    <!--? Nav Section-->
+    <!--
+      Component:
+      Navigation bar
+      -->
     <nav class="navbar">
-      <img class="empty-space" src="./public/favicon.png" alt="bedabots" srcset="">
+      <img class="empty-space" src="./favicon.png" alt="bedabots" srcset="" />
       <ul>
-        <li><b><a href="">Download</a></b></li>
-        <li><b><a href="">About</a></b></li>
-        <li><b><a href="">Community</a></b></li>
+        <li
+          ><b><a href="#download">Download</a></b></li
+        >
+        <li
+          ><b><a href="#about">About</a></b></li
+        >
+        <li
+          ><b><a href="#community">Community</a></b></li
+        >
       </ul>
       <div class="empty-space"></div>
     </nav>
-
   </header>
   <body id="root">
-    <!--? Top Hero Section-->
+    <!--
+      Component:
+      Top Hero 
+      -->
     <div class="heroTop">
-      <img id="logo" src="./img/logo.png" alt="" srcset="">
+      <img id="logo" src="./img/logo.png" alt="" srcset="" />
       <div class="bundle-1">
-        <img id="portable" class="banner" src="./img/Composite.png" alt="" srcset="">
+        <img
+          id="portable"
+          class="banner"
+          src="./img/Composite.png"
+          alt=""
+          srcset=""
+        />
         <div id="desktop" class="banner">
-          <img class="char" id="shockitty" src="./img/shockitty.png" alt="">
-          <img class="char" id="freezetess" src="./img/freezetess.png" alt="">
-          <img class="char" id="smirkitsune" src="./img/smirkitsune.png" alt="">
+          <img class="char" id="shockitty" src="./img/shockitty.png" alt="" />
+          <img class="char" id="freezetess" src="./img/freezetess.png" alt="" />
+          <img
+            class="char"
+            id="smirkitsune"
+            src="./img/smirkitsune.png"
+            alt=""
+          />
         </div>
         <div id="gradient" class="gradient"></div>
       </div>
     </div>
-    <!--? Padded content Section-->
+     <!--
+      Component:
+      Padded container
+      -->
     <div class="container">
-      <!--? Button lineup Section-->
+      <!--
+      Component:
+      Download button lineups
+      -->
       <div id="download">
         <h3>Download the demo now</h3>
         <div>
           <button>
             <div class="neon-border">
-              <img class="icon" src="./icons/windows.svg" alt="" srcset="">
+              <img class="icon" src="./icons/windows.svg" alt="" srcset="" />
               <h3>Windows</h3>
             </div>
           </button>
           <button>
             <div class="neon-border">
-              <img class="icon" src="./icons/linux.svg" alt="" srcset="">
+              <img class="icon" src="./icons/linux.svg" alt="" srcset="" />
               <h3>Linux</h3>
             </div>
-          </button> 
-       </div>
+          </button>
+        </div>
       </div>
-      <!--? Black screen card-->
-      <div class="card">
+      <!--
+      Component:
+      Black terminal screen
+      -->
+      <div id="about" class="card">
+        <!--
+          Component:
+          Black terminal screen header
+        -->
         <div class="card-header">
           <span class="window-button">
-            <img src="./icons/close.svg" alt="" srcset="">
+            <img src="./icons/close.svg" alt="" srcset="" />
           </span>
           <span class="window-button">
-            <img src="./icons/minimize.svg" alt="" srcset="">
+            <img src="./icons/minimize.svg" alt="" srcset="" />
           </span>
           <h5>about-bedabots.md</h5>
         </div>
+        <!--
+          Component:
+          Black terminal screen body
+        -->
         <div class="card-body">
           <div class="content">
-            <!--? Grid Container -->
+            <!--
+              Component:
+              Grid layout
+            -->
             <div class="grid">
-              <div >
-                <img src="./public/img/hero1.png" alt="testImage" srcset="">
+              <div>
+                <img
+                  class="no-bg"
+                  src="./img/hero1.gif"
+                  alt="testImage"
+                  srcset=""
+                />
               </div>
               <div>
                 <h2>What is <i>Bedabots?</i></h2>
-                <p>Bedabots is a unique take on the not-safe-for-work visual novel genre, currently in development. The story is beautifully rendered in a large amount of expertly drawn, full-sized comic pages, which appear panel-per-panel as the narration progresses. The game tells the thrilling tale of a young adult named Himo Kone, moving from his rural farm home to a futuristic mega-city where attractive robots live side-by-side with their human masters.</p>
+                <p
+                  >Bedabots is a unique take on the not-safe-for-work visual
+                  novel genre, currently in development. The story is
+                  beautifully rendered in a large amount of expertly drawn,
+                  full-sized comic pages, which appear panel-per-panel as the
+                  narration progresses. The game tells the thrilling tale of a
+                  young adult named Himo Kone, moving from his rural farm home
+                  to a futuristic mega-city where attractive robots live
+                  side-by-side with their human masters. <br />
+                  <br />
+                  On top of a plethora of gorgeous pieces of artwork
+                  accompanying the bulk of the storyline, the adult-rated scenes
+                  of Bedabots are depicted through high-resolution pixel
+                  animations, meticulously hand-crafted via a custom-made 3D to
+                  2D pipeline. Each character has a fully-rigged model, used to
+                  create animations which are then edited frame-by-frame to
+                  produce incredibly detailed results. Never before has making
+                  love to robots looked so good!
+                </p>
               </div>
             </div>
 
             <div class="grid">
               <div>
                 <h2>Test hero</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nam vitae laborum? Recusandae magnam dolorem id ut! Facilis rem doloribus voluptatibus nobis vitae repellat, aperiam nostrum, illum voluptatum, nihil distinctio.
-                Deserunt eos sapiente aperiam asperiores totam? Aliquam, culpa nihil facilis non possimus fugiat blanditiis nesciunt tenetur autem ducimus quam et optio cumque eligendi quidem amet modi officia quos? Nobis, pariatur!
-                Nulla blanditiis molestias nesciunt facilis repellendus, praesentium cupiditate? Reprehenderit aperiam molestias, in quia id, illo esse sequi dolores totam tempore voluptatum qui maxime quidem ducimus, veniam obcaecati. Perspiciatis, atque animi.</p>
+                <p
+                  >The world of Bedabots is a technologically advanced one. A
+                  globe-spanning conglomerate, named the Azuki Corporation, has
+                  developed the technology needed to mass-produce fully-sentient
+                  synthetic robot models. These robots are called Bedabots, and
+                  they have become a major part of everyday life ever since
+                  their inception!</p
+                >
               </div>
-              <div >
-                <img src="./public/img/hero2.png" alt="testImage" srcset="">
+              <div>
+                <img src="./img/hero2.gif" alt="testImage" srcset="" />
               </div>
-             
             </div>
-            
+
+            <div class="grid">
+              <div>
+                <img src="./img/hero3.png" alt="testImage" srcset="" />
+              </div>
+              <div>
+                <h2>Test hero</h2>
+                <p
+                  >Hundreds of radically different models carry out thousands of
+                  diverse duties. From crunching tremendous amounts of data to
+                  driving taxis around, from brewing the perfect cup of coffee
+                  to spearheading elite anti-terrorism units; there's a Bedabot
+                  purpose-built for every single task imaginable. They all share
+                  one thing in common: they were made to serve their human
+                  masters in more ways than one. After all, why would you make a
+                  bot you can't bed?</p
+                >
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <h2>Test hero</h2>
+                <p
+                  >Throughout the story, the main character will be encountering
+                  many different Bedabots; a lot of which may end up being
+                  bedded by him at one point or another. While Himo's primary
+                  goal is to make a name for himself in the capital city of
+                  Mintai, he won't hesitate to leave a mark on as many robots as
+                  he can along the way! As a virile young adult in the prime of
+                  his life, it's his prerogative to bed'em all!</p
+                >
+              </div>
+              <div>
+                <img src="./img/hero4.png" alt="testImage" srcset="" />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <img src="./img/hero5.png" alt="testImage" srcset="" />
+              </div>
+            </div>
+  
+            <div class="grid">
+              <div>
+                <img src="./img/hero6.png" alt="testImage" srcset="" />
+              </div>
+              <div>
+                <img src="./img/hero7.png" alt="testImage" srcset="" />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <img src="./img/hero9.png" alt="testImage" srcset="" />
+              </div>
+              <div>
+                <h2>Test hero</h2>
+                <p
+                  >All of these and many more will be encountered by Himo during
+                  his stay in Mintai city. This broad set of attractive,
+                  appealing synthetic girls serve as the love interests in
+                  Bedabots, though the road to bedding them will take many
+                  different forms. A casual fling here, a long-term romance
+                  there, a blossoming friendship with benefits, a robot that has
+                  the hots for you, and another that's icy cold. Which will be
+                  your favorite?</p
+                >
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <h2>Test hero</h2>
+                <p
+                  >Of course, not all Bedabots will be inherently friendly
+                  towards the newcomer in town. Some see value only in corporate
+                  ranking, others treat Himo like yet another customer. A
+                  special case are the bots personally bought and owned by Himo
+                  himself. They might cost an arm and a leg, but their company
+                  alone is worth every penny; let alone their unwavering loyalty
+                  to their one and only master.</p
+                >
+              </div>
+              <div>
+                <img src="./img/hero10.png" alt="testImage" srcset="" />
+              </div>
+            </div>
+
+            <div class="grid">
+              <div>
+                <img src="./img/hero11.png" alt="testImage" srcset="" />
+              </div>
+              <div>
+                <h2><i>Features</i></h2>
+                 <!--
+                  Component:
+                  Feature container
+                -->
+                <div id="feature">
+                  <p
+                    >Compelling story presented through comic pages and
+                    writing</p
+                  >
+                </div>
+                <div id="feature">
+                  <p
+                    >Compelling story presented through comic pages and
+                    writing</p
+                  >
+                </div>
+                <div id="feature">
+                  <p>Gratuitous amount of panty-shots</p>
+                </div>
+                <div id="feature">
+                  <p>Plenty of bots to bed</p>
+                </div>
+                <div id="feature">
+                  <p>Animated sex scenes</p>
+                </div>
+                <div id="feature">
+                  <p>Gallery mode</p>
+                </div>
+              </div>
+            </div>
+            <!-- End of card content body -->
           </div>
-        </div>
-      </div>   
-    </div>
-    <div class="community-container">
-        <h2>Community</h2>
-        <div class="community">
-        <div id="kickstarter" class="card">
-          <img src="./icons/kickstarter.svg" alt="" srcset="">
-          <p>Support us on kickstarter</p>
-        </div>
-        <div id="discord" class="card">
-          <img src="./icons/discord.svg" alt="" srcset="">
-          <p>Support us on discord</p>
         </div>
       </div>
     </div>
+     <!--
+      Component:
+      Community container
+    -->
+    <div id="community" class="community-container">
+      <h2>Community</h2>
+      <div class="community">
+        <!--
+          Component:
+          Community card
+        -->
+        <a
+          href="https://www.kickstarter.com/projects/tinkeringturian/bedabots"
+          id="kickstarter"
+          class="card"
+          target="_blank"
+        >
+          <img src="./icons/kickstarter.svg" alt="" srcset="" />
+          <p><b>Support us on kickstarter</b></p>
+        </a>
+        <a href="" target="_blank" id="discord" class="card">
+          <img src="./icons/discord.svg" alt="" srcset="" />
+          <p><b>Join our discord server</b></p>
+        </a>
+      </div>
+    </div>
+    <!--
+      Component:
+      JS script
+    -->
+    <script type="module" src="./main.js"></script>
   </body>
+  <!--
+    Component:
+    Footer
+  -->
   <footer>
-    <img src="./public/favicon.png" alt="" srcset="">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis reiciendis voluptates corrupti obcaecati, praesentium debitis eaque maiores, quam eum autem temporibus voluptatum, reprehenderit dolore nihil quia nobis repellendus dignissimos? Ipsam!!</p>
+    <img src="./favicon.png" alt="" srcset="" />
+    <p
+      >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+      reiciendis voluptates corrupti obcaecati, praesentium debitis eaque
+      maiores, quam eum autem temporibus voluptatum, reprehenderit dolore nihil
+      quia nobis repellendus dignissimos? Ipsam!!
+      <br />
+      <a href="https://github.com/Kale06" target="_blank" style="color: white"
+        >kale06</a
+      >
+    </p>
   </footer>
 </html>

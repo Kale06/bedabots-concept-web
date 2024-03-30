@@ -1,0 +1,13 @@
+# Ignore directories
+node_modules/
+dist/
+build/
+
+# Ignore specific files
+*.log
+*.txt
+*.md
+
+# Ignore files with specific names
+package-lock.json
+yarn.lock

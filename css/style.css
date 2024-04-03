@@ -1,0 +1,590 @@
+@font-face {
+  font-family: orbitron;
+  src: url('../fonts/Orbitron-VariableFont.ttf');
+}
+
+@font-face {
+  font-family: oxanium;
+  src: url('../fonts/Oxanium-VariableFont.ttf');
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: orbitron;
+}
+
+p {
+  font-family: oxanium;
+}
+
+.card-body p {
+	text-shadow: 4px 3px 1px #080b3c, 0px 0px 2px #ffffffd1;
+}
+
+i {
+  color: #6aa4e8;
+}
+
+.centered {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  background-color: #191919;
+}
+
+button {
+  background-color: #00000099;
+  width: 18rem;
+  color: white;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 150ms ease-out;
+  border-radius: 13px;
+}
+
+button:hover {
+  background-color: #112535;
+}
+
+button:active {
+  filter: grayscale(100%);
+}
+
+.icon {
+  width: 10%;
+  height: 100%;
+  scale: 1/1;
+}
+
+.neon-border {
+  border: 2px solid #58bff2;
+  margin: 8px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.neon-border * {
+  margin: 10px 5px;
+}
+
+.img-corner {
+	border-radius: 6px;
+}
+
+/*? Media screen config */
+
+@media screen and (max-width: 576px) {
+  /* XS */
+  #logo {
+    scale: 0.15;
+  }
+
+  #download div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid div {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 0.8rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .community {
+    flex-direction: column;
+  }
+
+  footer p {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 913px) {
+  /* SM */
+  #logo {
+    scale: 0.15;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid div {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 0.8rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .community {
+    flex-direction: column;
+  }
+  footer p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1382px) {
+  /* MD */
+  #desktop-banner {
+    display: none;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 1382px) {
+  /* MD */
+  #logo {
+    scale: 0.35;
+  }
+  .container {
+    padding: 0 10rem;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 58%;
+  }
+
+  footer p {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1382px) {
+  /* LG */
+  #portable-banner {
+    display: none;
+  }
+
+  .grid div {
+    width: 50%;
+  }
+
+  #logo {
+    scale: 0.45;
+  }
+
+  .container {
+    padding: 0 10rem;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 58%;
+  }
+
+  footer p {
+    width: 40%;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar * {
+  padding: 10px 35px;
+}
+
+.navbar ul * {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  transition: 150ms ease-out;
+}
+
+.navbar a {
+  background-color: #191919bb;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  color: yellow;
+  background-color: #191919;
+}
+
+.navbar ul *:active {
+  filter: grayscale(100%);
+}
+
+.empty-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 3.5rem;
+}
+
+/*? Hero Config */
+.banner {
+  width: 100%;
+  height: 950px;
+  object-fit: cover;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+}
+
+#desktop-banner {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.char {
+  position: relative;
+  top: 0;
+  height: 100%;
+}
+
+#shockitty {
+  position: absolute;
+  left: -915px;
+  margin-left: 50%;
+}
+
+#smirkitsune {
+  position: absolute;
+  left: 79px;
+  margin-left: 50%;
+}
+
+#freezetess {
+  z-index: 1;
+}
+
+#gradient {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 950px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 20%,
+    #191919 80%
+  );
+}
+
+.bundle-1 {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  z-index: 1;
+  margin-top: 410px;
+}
+
+.heroTop {
+  position: relative;
+  z-index: 0;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*? Download config*/
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+#download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#download button {
+  margin: 0px 0.6rem;
+}
+
+/*? about config */
+
+.card {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #00000099;
+  color: #58bff2;
+  border-bottom: 3px #58bff2;
+  border-top: 2px solid #58bff2;
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #58bff2;
+}
+
+.card-header * {
+  margin: 6px;
+}
+
+.window-button {
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 25px;
+  border: 1px solid #58bff2;
+}
+
+.window-button img {
+  width: 100%;
+  scale: 1.3;
+  aspect-ratio: 1/1;
+}
+
+/*? Grid content config */
+.content {
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 0px !important;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div {
+  margin: 0 1.8rem;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eyes-img {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+/*? Community config */
+.community-container {
+  background-color: #112535;
+  padding-bottom: 2rem;
+  padding-top: 0.4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-tile {
+  transition: 300ms ease-in;
+  margin: 1rem 1rem;
+  min-height: 450px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 6px;
+  background-size: cover;
+  background-image: url('../img/card.png');
+  filter: grayscale(0.8);
+}
+
+.community-tile-icon {
+	width: 20%;
+	height: 20%;
+	object-fit: cover;
+	margin-top: 270px;
+	filter: drop-shadow(2px 4px 6px red) drop-shadow(-2px -4px 6px red);
+}
+
+#patreon {
+  background-position: 0% 0%;
+}
+
+#kickstarter {
+  background-position: 35% 0%;
+}
+
+#discord {
+  background-position: 73% 0%;
+}
+
+#twitter {
+  background-position: 100% 0%;
+}
+
+.community-tile:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.community-tile p {
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px red, -1px -1px 1px red, 1px 1px 3px red, -1px -1px 3px red, 0px 0px 5px red;
+  transition: 300ms ease-in;
+}
+
+.community-tile:hover p {
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4.2rem;
+  padding-bottom: 10px;
+  font-size: 9pt;
+}
+
+footer img {
+  width: 70px;
+  aspect-ratio: 1/1;
+}
+
+footer p {
+  text-align: right;
+}
+
+.card-body div {
+  margin: 15px;
+  margin-top: 0px;
+  margin-bottom: 13px;
+}
+
+.feature {
+  width: 100% !important;
+  border: 2px solid #58bff2;
+  font-weight: bold;
+  margin-left: 0px !important;
+  border-radius: 6px;
+}
+
+.feature p {
+	text-align: center;
+	text-shadow: none;
+}
+
+
+.nsfw-prompt-inner {
+	border: 2px solid white;
+	border-radius: 4px;
+	max-width: 826px;
+	margin: auto;
+	width: 43%;
+	padding: 8px;
+	margin-top: 20vh;
+}
+
+.nsfw-prompt-title {
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nsfw-prompt-text {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+.nsfw-prompt-button-container {
+	width: 20%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#nsfw-prompt-button {
+	color: white;
+	border-radius: 4px;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #003C6C;
+	font-size: 20px;
+	padding: 2px;
+	width: 100%;
+	max-width: 413px;
+	transition: border-color 0.2s ease, background 0.1s ease;
+}
+
+#nsfw-prompt-button:hover {
+	border-color: #005AA1;
+}
+
+#nsfw-prompt-button:active {
+	background-color: #005AA1;
+}
+
